@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+    
+{% block body %}
+<h1>hi this root base htnl files please let me know</h1>
+
+    {% if message %}
+        <div>
+            <strong>Message:</strong>
+            <ul>
+                {% for message in message %}
+                <li>{{message}}</li>
+                {% endfor %}
+            </ul>
+        </div>
+    {% endif %}
+
+    {% block content %}{% endblock %}
+{% endblock body %}
+      
+   

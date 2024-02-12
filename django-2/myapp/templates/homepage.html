@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% load thumbnail %}
+{% block title %}HomePage {% endblock %}
+
+{% block body %}
+    {% for post in posts %}
+        {% include "include/post.html" with post=post show_detail_link=True %}
+    {% endfor %}
+    <img src="http://jaced.com/blogpix/2007/trisquarecircle/002.gif" usemap="#shapes">
+
+    <map name="shapes">
+        <area shape="polygon" coords="79,6,5,134,153,134"> polygon
+        <area shape="rectangle" coords="177,6,306,134"> rectangle
+        <area shape="circle" coords="397,71,65"> circle
+    </map>
+{% endblock %}
+
+
+
+
+
+
+
+
+
+
